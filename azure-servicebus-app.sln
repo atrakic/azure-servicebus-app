@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Receiver.ConsoleApp", "src\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Submitter.ConsoleApp", "src\Submitter.ConsoleApp\Submitter.ConsoleApp.csproj", "{3CA359EA-4BF3-40FE-87A4-B4E5AE3BA760}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceBusLib", "src\ServiceBusLib\ServiceBusLib.csproj", "{ECC58819-7FEC-42B7-B29B-E14AC841A5C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,10 +36,15 @@ Global
 		{3CA359EA-4BF3-40FE-87A4-B4E5AE3BA760}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CA359EA-4BF3-40FE-87A4-B4E5AE3BA760}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CA359EA-4BF3-40FE-87A4-B4E5AE3BA760}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECC58819-7FEC-42B7-B29B-E14AC841A5C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECC58819-7FEC-42B7-B29B-E14AC841A5C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECC58819-7FEC-42B7-B29B-E14AC841A5C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECC58819-7FEC-42B7-B29B-E14AC841A5C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{1412C2A6-BFE2-4CEE-8C52-295D870B42D8} = {FF70EAB2-ACAC-48F1-A361-F1B36664F64E}
 		{48D31516-76D9-46A8-98A0-57DBD9F52F6F} = {A03AF50E-9822-4BE5-9F9D-7963F5AFEF2E}
 		{3CA359EA-4BF3-40FE-87A4-B4E5AE3BA760} = {A03AF50E-9822-4BE5-9F9D-7963F5AFEF2E}
+		{ECC58819-7FEC-42B7-B29B-E14AC841A5C8} = {A03AF50E-9822-4BE5-9F9D-7963F5AFEF2E}
 	EndGlobalSection
 EndGlobal
