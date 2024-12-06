@@ -36,3 +36,4 @@ resource serviceBusQueue 'Microsoft.ServiceBus/namespaces/queues@2022-01-01-prev
 
 output serviceBusNamespaceName string = serviceBusNamespace.name
 output serviceBusQueueName string = serviceBusQueue.name
+output subscriptionId string = subscription().subscriptionId
