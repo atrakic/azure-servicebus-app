@@ -23,8 +23,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Receiver.ConsoleApp\Receiver.ConsoleApp.csproj" />
     <ProjectReference Include="..\..\src\Submitter.ConsoleApp\Submitter.ConsoleApp.csproj" />
+    <ProjectReference Include="..\..\src\Receiver.Worker\Receiver.Worker.csproj" />
   </ItemGroup>
 
 </Project>

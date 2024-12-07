@@ -22,7 +22,8 @@ def get_bicep_outputs(bicep_file):
 
 def update_appsettings(cproj_file, outputs):
     appsettings_path = os.path.join(os.path.dirname(cproj_file), "appsettings.json")
-    if not os.path.exists(appsettings_path):
+    print(f"Updating appsettings for: {cproj_file}")
+    if os.path.exists(appsettings_path):
         with open(appsettings_path, "w") as f:
             json.dump(outputs, f, indent=4)
         return
@@ -30,16 +31,13 @@ def update_appsettings(cproj_file, outputs):
 
 def main():
     bicep_file = "infra/main.bicep"
-
-    cproj_files = [
-        "src/Receiver.ConsoleApp/Receiver.ConsoleApp.csproj",
-        "src/Submitter.ConsoleApp/Submitter.ConsoleApp.csproj",
-    ]
-
     outputs = get_bicep_outputs(bicep_file)
 
+    cproj_files = [
+        "src/Receiver.Worker/Receiver.Worker.csproj",
+        "src/Submitter.ConsoleApp/Submitter.ConsoleApp.csproj",
+    ]
     for cproj_file in cproj_files:
-        print(f"Updating appsettings for: {os.path.join(os.path.dirname(cproj_file))}")
         update_appsettings(cproj_file, outputs)
 
 
