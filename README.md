@@ -22,7 +22,8 @@ $ az login
 2) Create azure infrastructure
 
 ```bash
-$ python ./configure.py
+$ cd ./infa
+$ make
 ```
 
 3) Configure
